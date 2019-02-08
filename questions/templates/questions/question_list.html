@@ -6,6 +6,11 @@
         <p class="top-menu">
             안녕하세요 {{ user.username }}님! <small>(<a href="{% url 'logout' %}">로그아웃</a>)</small><br>
             자유롭게 질문을 올려주세요! 😄
+            <br>
+            <br>
+            *강의 참고 링크: <br>
+            <a href="https://www.ebsmath.co.kr/resource/rscView?cate=10097&cate2=10163&cate3=10169&rscTpDscd=RTP10&grdCd=MGRD02&sno=26655&historyYn=study" target="_blank">[EBSMath 이발사의 역설 영상]</a> <br>
+            <a href="https://kin.naver.com/qna/detail.nhn?d1id=11&dirId=1113&docId=56266389&qb=cmljaGFyZGlhbg==&enc=utf8&section=kin&rank=1&search_sort=0&spq=0&pid=UaW9bwpVuECssaKRGzVssssss0N-150219&sid=PnElM8pF/U1okKG3qKX85Q%3D%3D" target="_blank">[지식인 리차아드의 역설]</a>
         </p>
         <form method="POST" class="post-form">{% csrf_token %}
             <!--<label for="question">질문하기</label>-->
@@ -58,5 +63,8 @@
     {% else %}
         <p>질문이 없습니다.</p>
     {% endif %}
+        <div class="author-container mt-3 mb-3 text-center">
+            <span class="text-monospace"> Made By <a href="https://www.facebook.com/rockethyun" target="_blank">Junghyun Park</a> 🚀 </span>
+        </div>
     </div>
 {% endblock %}

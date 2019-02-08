@@ -2,11 +2,12 @@
 
 {% block content %}
     <section class="container login-container">
-        <h1 class="title mt-3 mb-3">✨ 제2회 BAG 모임 ✨</h1>
-        <p>
-            Speaker: 지민웅 🎮
+        <h1 class="title nowrap mt-3 mb-3">✨ 제2회 BAG 모임 ✨</h1>
+        <p class="detail nowrap">
+            Speaker: Minoong Ji 🎮 <br>
+            Topic: Gödel's incompleteness theorems 🤔
         </p>
-        <div class="login-btn-container">
+        <div class="login-btn-container mt-3">
             <div class="btn-container mb-3">
                 <a href="{% url 'social:begin' 'facebook' %}" class="btn btn-block btn-social btn-facebook">
                     <i class="fab fa-facebook-f"></i> Sign in with Facebook
@@ -17,6 +18,9 @@
                     <i class="fab fa-google"></i> Sign in with Google
                 </a>
             </div>
+        </div>
+        <div class="author-container mt-3">
+            <span class="text-monospace"> Made By <a href="https://www.facebook.com/rockethyun" target="_blank">Junghyun Park</a> 🚀 </span>
         </div>
     </section>
 {% endblock %}

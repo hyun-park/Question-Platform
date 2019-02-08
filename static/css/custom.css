@@ -24,6 +24,18 @@ hr {
     width: 100%;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
+.title {
+    font-size: 2.1rem;
+}
+
+.detail {
+    font-size: 0.9rem;
+}
+
 
 /* Login END */
 
