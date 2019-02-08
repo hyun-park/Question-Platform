@@ -1,4 +1,37 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+hr {
+    border-color:white;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    min-width: 300px;
+    max-width: 800px;
+}
+
 .btn-social {
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
+}
+
+
+/* Login END */
+
+.submit-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-body form {
+    margin-bottom: 0px !important;
 }

@@ -2,31 +2,54 @@
 
 {% block content %}
     <div>
+        <h1 class="title mt-3 mb-3">질문 피드</h1>
+        <p class="top-menu">
+            안녕하세요 {{ user.username }}님! <small>(<a href="{% url 'logout' %}">로그아웃</a>)</small><br>
+            자유롭게 질문을 올려주세요! 😄
+        </p>
         <form method="POST" class="post-form">{% csrf_token %}
             <!--<label for="question">질문하기</label>-->
               <div class="form-group">
                 <textarea class="form-control" id="question_textarea" name="text" rows="3" required></textarea>
               </div>
-            <button type="submit" class="save btn btn-primary">질문하기</button>
+            <div class="submit-container">
+                <button type="submit" class="save btn btn-primary">질문하기</button>
+            </div>
         </form>
+        <div class="warning-container">
+           {% if messages%}
+                {% for message in messages %}
+                    <div class="alert alert-warning" role="alert">
+                      {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
         <hr>
     {% if questions %}
         {% for question in questions %}
-            <div class="card">
+            <div class="card mt-3">
               <div class="card-body">
-                  <h5 class="card-title">{{ question.text|linebreaksbr }}</h5>
+                  <h5 class="card-title text-dark">
+
+                      {{ question.text|linebreaksbr }}
+
+
+                  </h5>
+
                 <h6 class="card-subtitle mb-2 text-muted">
                     <!--{{ question.author }} ( -->
-                    작성 날짜: {{ question.created_date }} <br>
-                    받은 추천: {{ question.upvotes.count }}
+                    {{ question.created_date}} <br>
+                    추천 {{ question.upvotes.count }} 개
                 </h6>
+
                 {% if not question.isLiked %}
                   <form method="POST" action="{% url 'upvote_question' question.id %}">{% csrf_token %}
-                    <button type="submit" class="btn btn-primary">추천 하기</button>
+                      <button type="submit" class="btn btn-light">👍</button>
                   </form>
                 {% else %}
                   <form method="POST" action="{% url 'downvote_question' question.id %}">{% csrf_token %}
-                    <button type="submit" class="btn btn-danger">추천 취소 하기</button>
+                      <button type="submit" class="btn btn-primary">👍</button>
                   </form>
                 {% endif %}
               </div>

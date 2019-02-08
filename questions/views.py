@@ -7,6 +7,7 @@ from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.core.exceptions import MultipleObjectsReturned
+from django.db.models import Count
 
 @login_required
 def question_list(request):
@@ -22,7 +23,7 @@ def question_list(request):
         else:
             return redirect('question_list')
     else:
-        questions = Question.objects.order_by('-created_date')
+        questions = Question.objects.annotate(upvote_counts=Count('upvotes')).order_by('-upvote_counts')
         user_id = request.user.id
         for question in questions:
             question.isLiked = question.isLiked(user_id)
