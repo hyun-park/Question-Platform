@@ -1,0 +1,10 @@
+{% extends 'questions/base.html' %}
+
+{% block content %}
+    <div>
+        <form method="POST">{% csrf_token %}
+            {{ form }}
+            <button type="submit" class="save btn btn-default">회원가입</button>
+        </form>
+    </div>
+{% endblock %}
