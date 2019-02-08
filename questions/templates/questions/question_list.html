@@ -1,26 +1,32 @@
 {% extends 'questions/base.html' %}
 
 {% block content %}
-    <div class="container">
-    <form method="POST" class="post-form">{% csrf_token %}
-        <!--<label for="question">질문하기</label>-->
-        <textarea id="question" name="text" required></textarea>
-        <button type="submit" class="save btn btn-default">질문하기</button>
-    </form>
+    <div>
+        <form method="POST" class="post-form">{% csrf_token %}
+            <!--<label for="question">질문하기</label>-->
+              <div class="form-group">
+                <textarea class="form-control" id="question_textarea" name="text" rows="3" required></textarea>
+              </div>
+            <button type="submit" class="save btn btn-primary">질문하기</button>
+        </form>
+        <hr>
     {% if questions %}
         {% for question in questions %}
             <div class="card">
               <div class="card-body">
                   <h5 class="card-title">{{ question.text|linebreaksbr }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ question.author }} ( {{ question.created_date }} )</h6>
-                <span>추천: {{ question.upvotes.count }} </span> <br>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    <!--{{ question.author }} ( -->
+                    작성 날짜: {{ question.created_date }} <br>
+                    받은 추천: {{ question.upvotes.count }}
+                </h6>
                 {% if not question.isLiked %}
                   <form method="POST" action="{% url 'upvote_question' question.id %}">{% csrf_token %}
-                    <button type="submit" class="save btn btn-default">추천 하기</button>
+                    <button type="submit" class="btn btn-primary">추천 하기</button>
                   </form>
                 {% else %}
                   <form method="POST" action="{% url 'downvote_question' question.id %}">{% csrf_token %}
-                    <button type="submit" class="save btn btn-default">추천 취소 하기</button>
+                    <button type="submit" class="btn btn-danger">추천 취소 하기</button>
                   </form>
                 {% endif %}
               </div>

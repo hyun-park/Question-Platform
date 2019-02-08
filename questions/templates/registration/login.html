@@ -22,6 +22,10 @@
         <!--<input type="hidden" name="next" value="{{ next }}" />-->
     <!--</form>-->
     <!--<a href="/accounts/signup"> <button>세미나 등록하기</button></a>-->
-    <a href="{% url "social:begin" "facebook" %}"><button class="btn btn-primary" style="width: 40%">FB Login</button></a>
-    <a href="{% url "social:begin" "google-oauth2" %}"><button class="btn btn-danger" style="width: 40%">G+ Login</button></a>
+    <a href="{% url 'social:begin' 'facebook' %}" class="btn btn-block btn-social btn-facebook">
+        <i class="fab fa-facebook-f"></i> Sign in with Facebook
+    </a>
+    <a href="{% url 'social:begin' 'google-oauth2' %}"  class="btn btn-block btn-social btn-google">
+        <i class="fab fa-google"></i> Sign in with Google
+    </a>
 {% endblock %}
