@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 import json
 
+import django_heroku
+
 import dj_database_url
 
 from django.core.exceptions import ImproperlyConfigured
@@ -189,3 +191,5 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = GOOGLE_KEY
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = GOOGLE_SECRET
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['email']
+
+django_heroku.settings(locals())
