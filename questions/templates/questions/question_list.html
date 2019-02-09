@@ -4,7 +4,7 @@
     <div>
         <h1 class="title mt-5 mb-3">질문 피드</h1>
         <p class="top-menu">
-            안녕하세요 {{ user.username }}님! <small>(<a href="{% url 'logout' %}">로그아웃</a>)</small><br>
+            안녕하세요 {{ user.first_name }}님! <small>(<a href="{% url 'logout' %}">로그아웃</a>)</small><br>
             자유롭게 질문을 올려주세요! 😄
             <br>
             <br>
@@ -66,7 +66,10 @@
                 <h6 class="card-subtitle mb-2 text-muted">
                     <!--{{ question.author }} ( -->
                     {{ question.created_date}} <br>
-                    추천 {{ question.upvotes.count }} 개
+                    추천 {{ question.upvotes.count }} 개 <br>
+                    {% if user.is_superuser %}
+                        작성자: {{ question.author.last_name}} {{ question.author.first_name}}
+                    {% endif %}
                 </h6>
 
                 {% if not question.isLiked %}
