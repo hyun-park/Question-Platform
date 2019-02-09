@@ -23,7 +23,7 @@ def question_list(request):
         else:
             return redirect('question_list')
     else:
-        questions = Question.objects.annotate(upvote_counts=Count('upvotes')).order_by('-upvote_counts')
+        questions = Question.objects.annotate(upvote_counts=Count('upvotes')).order_by('-upvote_counts', '-created_date')
         user_id = request.user.id
         for question in questions:
             question.isLiked = question.isLiked(user_id)
