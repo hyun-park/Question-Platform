@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5efed07-0002-4724-b9dd-d77f31e55037" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/sgsc_seminar/settings.py" afterPath="$PROJECT_DIR$/sgsc_seminar/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +31,8 @@
           <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sgsc_seminar/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+                <state relative-caret-position="585">
+                  <caret line="176" column="16" lean-forward="true" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
                   <folding>
                     <element signature="e#313#322#0" expanded="true" />
                   </folding>
@@ -93,11 +92,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="envs.json" pinned="false" current-in-tab="false">
+          <file leaf-file-name="envs.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/envs.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="43" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -113,11 +112,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -247,6 +246,8 @@
       <find>ImproperlyConfigured</find>
       <find>dj_database_url</find>
       <find>user_id</find>
+      <find>get_env</find>
+      <find>SECRET_KEY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,7 +261,6 @@
         <option value="$PROJECT_DIR$/questions/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/questions/admin.py" />
         <option value="$PROJECT_DIR$/questions/models.py" />
-        <option value="$PROJECT_DIR$/envs.json" />
         <option value="$PROJECT_DIR$/Procfile.txt" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/sgsc_seminar/urls.py" />
@@ -276,9 +276,10 @@
         <option value="$PROJECT_DIR$/static/css/custom.css" />
         <option value="$PROJECT_DIR$/questions/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/questions/templates/questions/question_list.html" />
-        <option value="$PROJECT_DIR$/sgsc_seminar/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sgsc_seminar/settings.py" />
+        <option value="$PROJECT_DIR$/envs.json" />
       </list>
     </option>
   </component>
@@ -344,6 +345,11 @@
           <expand>
             <path>
               <item name="sgsc_seminar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgsc_seminar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sgsc_seminar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgsc_seminar" type="462c0819:PsiDirectoryNode" />
               <item name="sgsc_seminar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -807,24 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/envs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgsc_seminar/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#313#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -843,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -861,8 +841,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sgsc_seminar/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="176" column="16" lean-forward="true" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
+          <folding>
+            <element signature="e#313#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/envs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

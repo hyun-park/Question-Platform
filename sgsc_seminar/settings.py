@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#awzw+8#8cd_wzd1^o6=(+$9-_4^60cnv9l*l(bqu0#&wu@mp9'
+# SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -171,6 +171,7 @@ if env_file is None: # System environ
         GOOGLE_SECRET = os.environ['GOOGLE_SECRET']
         FACEBOOK_KEY = os.environ['FACEBOOK_KEY']
         FACEBOOK_SECRET = os.environ['FACEBOOK_SECRET']
+        SECRET_KEY = os.environ['SECRET_KEY']
     except KeyError as error_msg:
         raise ImproperlyConfigured(error_msg)
 else: # JSON env
@@ -179,6 +180,7 @@ else: # JSON env
     FACEBOOK_SECRET = get_env('FACEBOOK_SECRET', envs)
     GOOGLE_KEY = get_env('GOOGLE_KEY', envs)
     GOOGLE_SECRET = get_env('GOOGLE_SECRET', envs)
+    SECRET_KEY = get_env('SECRET_KEY', envs)
 
 SOCIAL_AUTH_FACEBOOK_KEY = FACEBOOK_KEY
 SOCIAL_AUTH_FACEBOOK_SECRET = FACEBOOK_SECRET
