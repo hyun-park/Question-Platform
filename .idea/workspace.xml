@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5efed07-0002-4724-b9dd-d77f31e55037" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/questions/templates/questions/question_list.html" afterPath="$PROJECT_DIR$/questions/templates/questions/question_list.html" />
-      <change beforePath="$PROJECT_DIR$/static/css/custom.css" afterPath="$PROJECT_DIR$/static/css/custom.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -134,8 +132,8 @@
                   <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/questions/templates/registration/login.html">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="105">
-                          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+                        <state relative-caret-position="315">
+                          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
                           <folding />
                         </state>
                       </provider>
@@ -170,8 +168,8 @@
                   <file leaf-file-name="question_list.html" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/questions/templates/questions/question_list.html">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="326">
-                          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+                        <state relative-caret-position="433">
+                          <caret line="87" column="46" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
                           <folding />
                         </state>
                       </provider>
@@ -260,14 +258,14 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/sgsc_seminar/local_settings.py" />
         <option value="$PROJECT_DIR$/sgsc_seminar/settings.py" />
-        <option value="$PROJECT_DIR$/questions/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/questions/urls.py" />
         <option value="$PROJECT_DIR$/questions/views.py" />
         <option value="$PROJECT_DIR$/static/custom.js" />
         <option value="$PROJECT_DIR$/questions/templates/questions/base.html" />
         <option value="$PROJECT_DIR$/static/js/custom.js" />
-        <option value="$PROJECT_DIR$/questions/templates/questions/question_list.html" />
         <option value="$PROJECT_DIR$/static/css/custom.css" />
+        <option value="$PROJECT_DIR$/questions/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/questions/templates/questions/question_list.html" />
       </list>
     </option>
   </component>
@@ -770,6 +768,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -854,26 +853,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/questions/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        <state relative-caret-position="315">
+          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/questions/templates/questions/question_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="433">
+          <caret line="87" column="46" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
           <folding />
         </state>
       </provider>
