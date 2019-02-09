@@ -14,16 +14,27 @@
           return val.innerText.replace(' (삭제)','').includes(query);
         });
 
-        $.each($(".question-card"), function (index, question) {
-            if(isEmpty) {
-                $(question).removeClass("d-none");
-            } else {
-                if(isSearchedQuestions[index]) {
-                    $(question).removeClass("d-none");
-                } else {
-                    $(question).addClass("d-none");
-                }
-            }
+        let isNotFound = isSearchedQuestions.every(function (isFound) {
+            return !isFound
         });
+
+
+        if(isEmpty) {
+            $(".question-card").removeClass("d-none");
+        } else {
+            if(isNotFound) {
+                $(".question-card").addClass("d-none");
+                $("#question-not-found").removeClass("d-none");
+            } else {
+                $("#question-not-found").addClass("d-none");
+                $.each($(".question-card"), function (index, question) {
+                    if(isSearchedQuestions[index]) {
+                        $(question).removeClass("d-none");
+                    } else {
+                        $(question).addClass("d-none");
+                    }
+                });
+            }
+        }
     }
 })();
