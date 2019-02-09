@@ -44,6 +44,12 @@
 
                       {{ question.text|linebreaksbr }}
 
+                      {% if question.author_id == current_user_id %}
+                       <small>
+                           <a href="{% url 'delete_question' question.id %}">(삭제)</a>
+                       </small>
+                      {% endif %}
+
 
                   </h5>
 

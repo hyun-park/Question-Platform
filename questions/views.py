@@ -24,13 +24,14 @@ def question_list(request):
             return redirect('question_list')
     else:
         questions = Question.objects.annotate(upvote_counts=Count('upvotes')).order_by('-upvote_counts', '-created_date')
-        user_id = request.user.id
+        current_user_id = request.user.id
         for question in questions:
-            question.isLiked = question.isLiked(user_id)
+            question.isLiked = question.isLiked(current_user_id)
         form = QuestionForm()
     return render(request, 'questions/question_list.html',
                   {'questions': questions,
                    'form': form,
+                   'current_user_id': current_user_id,
                    })
 
 def register(request):
@@ -70,6 +71,16 @@ def downvote_question(request, question_id):
             upvote.delete()
         except Upvote.DoesNotExist:
             return redirect('/')
+        return redirect('/')
+    else:
+        return redirect('/')
+
+@login_required
+def delete_question(request, question_id):
+    question = Question.objects.get(id=question_id)
+    current_user_id = request.user.id
+    if question.author_id == current_user_id:
+        question.delete()
         return redirect('/')
     else:
         return redirect('/')
